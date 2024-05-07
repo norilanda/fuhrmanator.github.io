@@ -14,11 +14,8 @@ website:
         href: https://twitter.com/the_fuhrmanator
 format:
   html:
-    theme: cosmo
+    theme: united
     css: styles.css
     highlight-style: github
     syntax-definitions: 
       - syntax-highlighters/smalltalk.xml
-
-
-
