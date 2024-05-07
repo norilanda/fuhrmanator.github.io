@@ -16,6 +16,9 @@ format:
   html:
     theme: cosmo
     css: styles.css
+    highlight-style: github
+    syntax-definitions: 
+      - syntax-highlighters/smalltalk.xml
 
 
 

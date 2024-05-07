@@ -1,0 +1,97 @@
+---
+title: Running Pharo in Windows Subsystem for Linux (WSL)
+date: "2019-02-27"
+# draft: true
+title-block-banner: SurfaceRunningUbuntuWSL.jpg
+aliases: 
+    - "/Pharo-in-WSL/"
+---
+Pharo 7 runs well in Windows 10 (I have a Surface Pro 4), but I wanted to do some testing of a project also under Linux. Initially I had run Ubuntu in a VM VirtualBox, but given Windows Subsystem for Linux (WSL) is now Ubuntu 18 and is much lighter weight on disk space, I wanted to see if it would work with Pharo.
+
+![Surface Pro running Ubuntu in WSL](SurfaceRunningUbuntuWSL.jpg)
+
+Since [Pharo.org](http://Pharo.org) doesn't yet have specific instructions for installing on Ubuntu 18, I was unsure how to proceed. So, I went with the KISS principle and did a command-line (ZeroConf) install, which was successful. Here are the steps:
+
+- Install and activate WSL following [Microsoft's instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+- Install an X Server for Windows. I used [VcXsrv](https://sourceforge.net/projects/vcxsrv/) installed with [Chocolatey](https://chocolatey.org/packages/vcxsrv) (to make updating easy) and set it up like this:
+  - Run **XLaunch** from the start menu, which invokes a wizard. 
+  - Accept all the defaults on the wizard.
+  - At the last page of the wizard, click **Save configuration** specifying `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup` to have VcXsrv start automatically when you start Windows.
+- In WSL, you must `export DISPLAY=localhost:0` (e.g., in your WSL `~/.bashrc`).
+- Install [Mesa](https://wiki.debian.org/Mesa) with the command `sudo apt install mesa-utils`. This is apparently needed because there are missing libraries for the X11 display used by Pharo. I'm not sure if this is the official dependency, but it worked in my case. For reference, if you don't do this step, you'll get the following message that's somewhat misleading IMO:
+
+  ```
+  $ ./pharo-ui
+  could not find display driver vm-display-X11; either:
+  - check that /home/myusername/pharo-dir/pharo-vm/lib/pharo/5.0-201901051900//vm-display-X11.so exists, or
+  - use the '-plugins <path>' option to tell me where it is, or
+  - remove DISPLAY from your environment.
+  ```
+
+- Install Pharo with ZeroConf command line as below:
+
+  ```
+  mkdir MyPharo
+  cd MyPharo/
+  curl -L https://get.pharo.org/64/ | bash
+  ```
+
+- Start the X Server on Windows (e.g., XLaunch from the Start menu in Windows 10).
+- Run Pharo and have fun in Ubuntu 18 (WSL)
+
+  ```
+  ./pharo-ui
+  ```
+  
+  [![Pharo 7 Unix running in an XWindow]](Pharo7WSL.png)
+
+It also works with the [Pharo Launcher](http://pharo.org/download).
+
+### Edit: Installing Pharo Launcher
+
+Here are the steps to install Pharo Launcher in WSL from the command line:
+
+1. Download the latest version of the Linux 64 version of Pharo Launcher to your home directory:
+
+    ```
+    cd
+    curl -o pharo-launcher.zip -L https://files.pharo.org/pharo-launcher/linux64
+    ```
+
+2. Unzip it (you may need to install the `unzip` tool with `sudo apt install unzip`):
+
+    ```
+    unzip pharo-launcher.zip
+    ```
+
+    Normally this will create a `~/pharolauncher` directory.
+
+3. Run Pharo Launcher with the following command:
+
+    ```
+    pharolauncher/pharo-launcher &
+    ```
+
+### Edit: Shortcut to launch from Windows
+
+I removed these instructions from my page, because stopping Pharo Launcher abnormally (when started from a Windows command) sometimes results in stopping of all the images that were launched from the launcher (without any chance to save), which is a rather unpleasant surprise.
+
+### Edit: Make the cursor bigger on hi-resolution screens
+
+I use WSL on a Surface Pro, which has a very high resolution screen.
+This results in a very, very tiny cursor.
+If you set the `SQUEAK_FAKEBIGCURSOR` environment variable before launching Pharo, the cursor is definitely bigger:
+
+```
+export SQUEAK_FAKEBIGCURSOR=1
+```
+
+### Edit: Fix the keyboard if needed
+
+Pharo runs in an X window, which doesn't unfortunately retain the settings for the keyboard from Windows. If you have a keyboard with dead-keys (I was using US International), my WSL defaults to that and it's not possible to type the comment `"` character in Pharo. The solution I found is to execute the following on the WSL command line:
+
+```
+setxkbmap us -variant euro
+```
+
+To make the change "permanent," add it to the end of `~/.profile`.
