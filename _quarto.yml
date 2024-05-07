@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Blogging Allowed"
+  site-url: https://fuhrmanator.github.io/blog
+  description: "Web log for Christopher Fuhrman, software developer and professor of software engineering. Generated with Quarto."
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/fuhrmanator
+      - icon: twitter
+        href: https://twitter.com/the_fuhrmanator
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+
