@@ -1,0 +1,7 @@
+---
+title: Contact Me
+description: Have questions? I have questions, too, and sometimes answers.
+image: img/bg-contact.jpg'
+---
+
+Want to get in touch? The best way is [via email](mailto:christopher.fuhrman@gmail.com). 

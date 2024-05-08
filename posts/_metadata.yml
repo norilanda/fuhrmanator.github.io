@@ -4,5 +4,34 @@
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: true
 
-# Enable banner style title blocks
-title-block-banner: true
+# include CSS style for title blocks
+title-block-banner: "#00000000"
+title-block-banner-color: "#ffffff"
+include-in-header:
+  - text: |
+      <style>
+      #title-block-header.quarto-title-block.default .quarto-title-meta {
+        color: #ffffff;
+      }
+      .quarto-title-block .quarto-title-banner {
+        height: 0;
+      }
+      #title-block-header {
+        background-image: url(./image.jpg);
+        background-size: cover;
+        background-position-y: center;
+        height: 400px;
+        opacity: 1; /* Adjust as needed */
+        z-index: -1;
+      }
+      #title-block-header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: -1;
+      }
+      </style>
