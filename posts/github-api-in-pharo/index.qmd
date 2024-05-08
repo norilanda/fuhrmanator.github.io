@@ -1,14 +1,13 @@
 ---
-redirect_from: "/Using-GitHub-API-in-Pharo/"
-layout: post
-comments: true
-published: true
+aliases: 
+  - "/Using-GitHub-API-in-Pharo/"
 title: Using the GitHub API in Pharo 7
-header-img: img/posts/ForksAndStars.jpg
+date: 2019-03-22
+author: Christopher Fuhrman
+image: image.jpg
 subtitle: >-
   In my mining activities with Pharo, I found it useful to query GitHub to
   select projects to mine.
-background: '/img/posts/ForksAndStars.jpg'
 ---
 
 In my mining activities with Pharo, I found it useful to query GitHub to select projects to mine according to their popularity (e.g., forks and stars).
@@ -30,9 +29,13 @@ jsonString := znClient
         'https://api.github.com/search/repositories?q=language:java+stars:>=500+forks:>100&sort=stars&order=desc&per_page=5'.
 ```
 
->Note the specifics in the query, e.g. `language:java` and `sort=stars`. You can read more about these options on [GitHub's documentation for API v3](https://developer.github.com/v3/).
+::: {.callout-note}
+Note the specifics in the query, e.g. `language:java` and `sort=stars`. You can read more about these options on [GitHub's documentation for API v3](https://developer.github.com/v3/).
+:::
 
->Note this query returns at most 5 results (`per_page=5`). Without this option, GitHub gives 30 results per query. It's possible to get up to 100 results per query by setting `per_page=100`. To get multiple "pages", you specify the page number (`page=2`, `page=3`, etc.) in queries.
+::: {.callout-warning}
+This query returns at most 5 results (`per_page=5`). Without this option, GitHub gives 30 results per query. It's possible to get up to 100 results per query by setting `per_page=100`. To get multiple "pages", you specify the page number (`page=2`, `page=3`, etc.) in queries.
+:::
 
 The `jsonString` is a JSON string response, which can be accessed nicely using [NeoJSON](https://github.com/svenvc/NeoJSON) (which must be loaded in your Pharo image).
 
@@ -112,4 +115,4 @@ issueCount := ((((queryDic at: 'data') at: 'repository') at: 'issues')
     at: 'totalCount') asInteger
 ```
 
-[Photo credit](https://www.maxpixel.net/Metal-Metal-Fork-Spoon-Fork-Cutlery-Close-2390507)
+[Photo credit](https://pixabay.com/photos/fork-cutlery-metal-metal-fork-2390507/)
