@@ -1,15 +1,14 @@
 ---
-layout: post
-comments: true
-published: true
 title: Getting the most from markdown in GIFT
-header-img: img/posts/MarkdownGIFT.png
-background: '/img/posts/MarkdownGIFT.png'
+date: 2021-12-15
+author: Christopher Fuhrman
+categories: [Moodle, GIFT, markdown]
+image: image.jpg
 ---
 
 Markdown <i class="fab fa-markdown"></i> is a format supported within GIFT (see: [Creating questions quickly in Moodle with GIFT]({% post_url 2020-12-18-Creating-questions-quickly-with-GIFT %})), which can be used for simple formatting text in a question, in answers and feedback:
 
-```gift
+```latex
 ::Simple markdown::
 [markdown]If you're standing somewhere on the equator, the **sun** 
 rises in the\: {=*east*#**Super!** ~*west* ~*north* ~*south*}
@@ -33,22 +32,27 @@ Markdown can be used in a question stem, the text of an answer and even in feedb
 But it does not apply to matching answers, which appear in drop-down menus as unformatted text.
 As long as you start a GIFT question (stem) with `[markdown]`, the formatable elements will expect the markdown syntax.
 
-> You can actually specify a different format (markdown, html, etc.) for the stem, each answer and feedback by labeling the respective text with the tag of the format you want. 
-> However, that usage is out of the scope of this blog post.
+::: {.callout-tip}
+You can actually specify a different format (markdown, html, etc.) for the stem, each answer and feedback by labeling the respective text with the tag of the format you want. 
+However, that usage is out of the scope of this blog post.
+::: 
 
 ### Reminder: GIFT's control characters
 
 It's necessary to escape any GIFT control characters in the text, regardless of markdown.
 For example:
 
-```gift
+```latex
 ::Escaped control character::
 [markdown]Two plus two\: {=four =4}
 ```
 
 Notice the `\:` inside the question stem. This is necessary because `:` is one of [GIFT's special characters `~ = # { } :`](https://docs.moodle.org/311/en/GIFT_format#Special_Characters_.7E_.3D_.23_.7B_.7D), which generally must be escaped.
 Again, using a tool that understands GIFT will help with this.
-> Escaping is actually not always needed depending on context (I think you don't need to escape `=` in a stem). But since it doesn't hurt to escape control characters when they aren't supposed to take their GIFT meaning, it's simpler to just do it 👑.
+
+::: {.callout-tip}
+Escaping is actually not always needed depending on context (I think you don't need to escape `=` in a stem). But since it doesn't hurt to escape control characters when they aren't supposed to take their GIFT meaning, it's simpler to just do it 👑.
+:::
 
 ### Line breaks
 
@@ -56,7 +60,7 @@ In GIFT, line breaks are considered white space and don't mean anything, unless 
 Since markdown *does* use line breaks as part of its formatting, there must be a way to escape them so they don't get processed as GIFT.
 The Moodle GIFT parser will convert the text `\n` (two characters) of a markdown text into a line break. Here's an example:
 
-```
+```latex
 ::Multi-line question stem::
 [markdown]How much is\n\n2 + 2?{=four =4}
 ```
@@ -84,7 +88,7 @@ It's also an example of a gotcha in markdown formatting, because [Moodle's docum
 
 Here's an example of a nested, bulleted list in markdown that displays properly inside of Moodle (v.311):
 
-```
+```latex
 ::Nested bulleted list::
 [markdown]This is a nested list\:\n\n* Item A\n  * Item A.1\n  * Item A.2\n* Item B{TRUE}
 ```
@@ -98,7 +102,7 @@ That makes it less readable to have it one one line, but I know it works like th
 
 Formatting inline code is very straightforward. Here's an example:
 
-```gift
+```latex
 ::Inline code question::
 [markdown]What's the result of the following expression in JavaScript\: 
 `3 % 2`?
@@ -125,7 +129,7 @@ Furthermore, the non-breaking space has to be a character, **not** some HTML `&n
 
 Let's see a complicated 😱 example.
 
-````
+````latex
 ::Code blocks in stem and answers::
 [markdown]
 // Warning: there are some non-breaking spaces (look like normal spaces)
@@ -140,7 +144,7 @@ that accepts a string argument and always returns true.
 
 The above GIFT with markdown produces a multiple-choice question that displays like this in my Moodle:
 
-[![Preview of imported GIFT question in Moodle, markdown format for code blocks in the question stem and answers]({{site.baseurl}}/img/posts/MoodlePreviewCodeBlocksStemAnswers.png){:class="img-responsive"}]({{site.baseurl}}/img/posts/MoodlePreviewCodeBlocksStemAnswers.png)
+![Preview of imported GIFT question in Moodle, markdown format for code blocks in the question stem and answers](MoodlePreviewCodeBlocksStemAnswers.png)
 
 To help you as a mere mortal to create the markdown inside GIFT (especially with the non-breaking space in the right place), the VSCode GIFT extension provides a nice feature:
 - Select source code you want to format in markdown for GIFT
@@ -148,7 +152,7 @@ To help you as a mere mortal to create the markdown inside GIFT (especially with
 
 Here's a demo of how I used it to prepare the question above. Look for the non-breaking spaces highlighted 🟧 (see [this VSCode extension](https://marketplace.visualstudio.com/items?itemName=viktorzetterstrom.non-breaking-space-highlighter) but it is not required). Click the animated image below to view the demo in full screen:
 
-[![Escaping code blocks for GIFT markdown in VSCode with the GIFT extension]({{site.baseurl}}/img/posts/EscapingCodeBlocksWithVSCodeGIFT.gif){:class="img-responsive"}]({{site.baseurl}}/img/posts/EscapingCodeBlocksWithVSCodeGIFT.gif)
+![Escaping code blocks for GIFT markdown in VSCode with the GIFT extension](EscapingCodeBlocksWithVSCodeGIFT.gif)
 
 You can undo the escape operation if you want to change your block of code embedded in the question:  
 **<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> > Gift:  Unescape code block (Markdown)**.
@@ -158,7 +162,7 @@ You can undo the escape operation if you want to change your block of code embed
 Here's the solution without using the VSCode extension (it's part of a Stack Overflow [answer](https://stackoverflow.com/a/70383459/1168342)). 
 Note that I've replaced the non-breaking spaces as `.` at the start of lines that require indenting:
 
-````
+````latex
 ::Code blocks in stem and answers ::
 [markdown]
 Complete the following TypeScript class so it has a method named `go` that
