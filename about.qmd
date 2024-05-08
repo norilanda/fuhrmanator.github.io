@@ -5,14 +5,17 @@ about:
   template: jolla
   links:
     - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+      text: X (Twitter)
+      href: https://twitter.com/thefuhrmanator
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/fuhrmanator/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/fuhrmanator
+    - icon: envelope
+      text: Email
+      href: mailto:christopher.fuhrman@etsmtl.ca
 
 ---
 
