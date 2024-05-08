@@ -1,18 +1,18 @@
 ---
-layout: post
-comments: true
-published: true
 title: Dependency Structure Matrix for a Java project using Moose
-header-img: img/posts/DSM.jpg
+date: 2019-08-06
+categories: [Moose, Java, DSM]
+author: Christopher Fuhrman
 subtitle: >-
-  In this post I will show how one can create a Design Structure Matrix (DSM) in Moose, in particular from a model of a Java project. 
-background: '/img/posts/DSM.jpg'
+  I will show how one can create a Design Structure Matrix (DSM) in Moose, in particular from a model of a Java project. 
+image: image.jpg
 ---
+
 ## Dependency Structure Matrix for a Java project using Moose
 
-As an extension to [`Analyzing Java With Moose`]({% post_url 2019-07-29-AnalyzingJavaWithMoose %}), in this post I will show how one can create a Design Structure Matrix (DSM) in Moose, in particular from a model of a Java project.
+As an extension to [`Analyzing Java With Moose`](../analyzing-java-with-moose/index.qmd), in this post I will show how one can create a Design Structure Matrix (DSM) in Moose, in particular from a model of a Java project.
 
-First, you need to **generate** and **load an MSE file into Moose** for a Java project. Refer to [this post]({% post_url 2019-07-29-AnalyzingJavaWithMoose %}) for those steps, which uses [the Java code from from Head First Design Patterns](https://github.com/bethrobson/Head-First-Design-Patterns).
+First, you need to **generate** and **load an MSE file into Moose** for a Java project. Refer to [this post](../analyzing-java-with-moose/index.qmd) for those steps, which uses [the Java code from from Head First Design Patterns](https://github.com/bethrobson/Head-First-Design-Patterns).
 
 Roassal (which is a visualization platform that's part of Moose) has a visualization for DSM called *RTDSM*.
 It's explained [here](http://forum.world.st/DSM-td4842409.html), but with Pharo classes.
@@ -41,7 +41,7 @@ dsm rotation: 270.
 ^dsm
 ```
 
-[![Roassal DSM visualization]({{site.baseurl}}/img/posts/RTDSM.gif){:class="img-responsive"}]({{site.baseurl}}/img/posts/RTDSM.gif)
+![Roassal DSM visualization](RTDSM.gif)
 
 This visualization may not be as powerful as [IDEA's DSM analysis or Lattix's](https://blog.jetbrains.com/idea/2008/01/intellij-idea-dependency-analysis-with-dsm/), but it's open source and can be manipulated in Pharo.
 
