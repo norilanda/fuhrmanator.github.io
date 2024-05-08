@@ -13,7 +13,27 @@ GIFT is a text-based format for questions, kind of like a markdown for quizzes.
 Formally, one might call it a *domain specific language* (DSL).
 You can read [more about the Moodle GIFT](https://docs.moodle.org/en/GIFT_format).
 
-![](https://www.plantuml.com/plantuml/svg/ZP5RQy9048NVyoiMN_gK2m6XY1NJc9RYhQZGbq1PDsDSifUmEz9QyRztJQWLMsZtOH_ETsRc33EqI0tkf21JaE1PHWMGA8WzMt5LKqCbkQUiAetUgIBLGXloQ03K1RUuTpKM3MUdHXTa11kw4xY2Tqm4BvK4XOIv3ynFruDMEACII68u5TxDjs6c4VxemGIrbXmyujvrNZHKMMTpDItNfW3pEpk5QCdBbYCqsiPfosR7jHR5MRBy0qWSHOs0BXwzZdVqsbYTFfTbRujOzyAG2UxceI_usb2p3vYM8PUq1FjQXHL0xRiJI9yP_QRyYtZ--hpMFsr-t0rgLHwQczv5GVSuoDKuovvpbIQJQQxwfnLwjz4WcOsSDdbAnsIIBPTaDV-2iQFf8ajM6PdE5rc7K4iIRmYgS9V-1000 "Meme")
+<!-- ![](https://www.plantuml.com/plantuml/svg/ZP5RQy9048NVyoiMN_gK2m6XY1NJc9RYhQZGbq1PDsDSifUmEz9QyRztJQWLMsZtOH_ETsRc33EqI0tkf21JaE1PHWMGA8WzMt5LKqCbkQUiAetUgIBLGXloQ03K1RUuTpKM3MUdHXTa11kw4xY2Tqm4BvK4XOIv3ynFruDMEACII68u5TxDjs6c4VxemGIrbXmyujvrNZHKMMTpDItNfW3pEpk5QCdBbYCqsiPfosR7jHR5MRBy0qWSHOs0BXwzZdVqsbYTFfTbRujOzyAG2UxceI_usb2p3vYM8PUq1FjQXHL0xRiJI9yP_QRyYtZ--hpMFsr-t0rgLHwQczv5GVSuoDKuovvpbIQJQQxwfnLwjz4WcOsSDdbAnsIIBPTaDV-2iQFf8ajM6PdE5rc7K4iIRmYgS9V-1000 "Meme") -->
+
+```{.plantuml}
+@startuml
+scale 0.2
+skinparam BackgroundColor Green
+skinparam style strictuml
+skinparam DefaultTextAlignment center
+skinparam DefaultFontName Arial
+'skinparam NoteTextAlignment center
+skinparam class {
+    BackgroundColor transparent
+    BorderColor transparent
+    FontColor White
+    fontStyle bold
+    fontsize 200
+    textalignment center
+}
+class "<img:pngkey.com-white-crown-png-859112.png{scale=0.7}>\nKEEP\nCALM\n<size:80>AND\nCLICK LESS TO\n<size:280>CREATE MORE" as A
+@enduml
+```
 
 ## Why I like GIFT
 

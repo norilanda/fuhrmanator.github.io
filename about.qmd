@@ -1,11 +1,11 @@
 ---
-title: "About"
+title: "Christopher Fuhrman"
 image: profile.jpg
 about:
-  template: jolla
+  template: trestles
   links:
-    - icon: twitter
-      text: X (Twitter)
+    - icon: twitter-x
+      text: (Twitter)
       href: https://twitter.com/thefuhrmanator
     - icon: linkedin
       text: LinkedIn
@@ -20,8 +20,6 @@ about:
 ---
 
 ![](img/logo_ets_red_centered.svg)
-
-# Christopher Fuhrman
 
 I'm a software developer and professor of software engineering at the École de technologie supérieure (ETS) in Montreal. Find out more [here](https://profs.etsmtl.ca/cfuhrman).
 

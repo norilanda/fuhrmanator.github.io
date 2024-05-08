@@ -14,8 +14,12 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/fuhrmanator
-      - icon: twitter
-        href: https://twitter.com/the_fuhrmanator
+      - icon: twitter=x
+        href: https://twitter.com/thefuhrmanator
+      - icon: linkedin
+        href: https://www.linkedin.com/in/fuhrmanator/
+      - icon: envelope
+        href: mailto:christopher.fuhrman@etsmtl.ca
       - icon: rss
         href: index.xml
 format:
@@ -25,3 +29,13 @@ format:
     highlight-style: github
     syntax-definitions: 
       - syntax-highlighters/smalltalk.xml
+
+filters:
+  - diagram
+
+diagram:
+  engine:
+    plantuml:
+      mime-type:
+        image/svg+xml: true
+        application/pdf: false
