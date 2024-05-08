@@ -2,6 +2,7 @@
 title: Creating questions quickly in Moodle with GIFT
 author: Christopher Fuhrman
 date: 2020-12-18
+categories: [Moodle, GIFT]
 image: image.jpg
 ---
 I've been using Moodle for several years in my courses, and it remains one of the best tools for online learning thanks to its flexible and powerful testing (quiz) capabilities. 

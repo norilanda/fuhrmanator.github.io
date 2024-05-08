@@ -5,6 +5,9 @@ website:
   title: "Blogging Allowed"
   site-url: https://fuhrmanator.github.io/blog
   favicon: favicon.png
+  open-graph: 
+    site-name: "Blogging Allowed"
+
   description: "Web log for Christopher Fuhrman, software developer and professor of software engineering. Generated with Quarto."
   navbar:
     right:
