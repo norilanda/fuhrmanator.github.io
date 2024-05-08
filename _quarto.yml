@@ -4,6 +4,7 @@ project:
 website:
   title: "Blogging Allowed"
   site-url: https://fuhrmanator.github.io/blog
+  favicon: favicon.png
   description: "Web log for Christopher Fuhrman, software developer and professor of software engineering. Generated with Quarto."
   navbar:
     right:
@@ -12,6 +13,8 @@ website:
         href: https://github.com/fuhrmanator
       - icon: twitter
         href: https://twitter.com/the_fuhrmanator
+      - icon: rss
+        href: index.xml
 format:
   html:
     theme: united
