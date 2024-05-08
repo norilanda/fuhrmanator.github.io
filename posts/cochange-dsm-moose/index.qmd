@@ -1,23 +1,23 @@
 ---
-layout: post
-comments: true
-published: true
 title: Using a DSM to visualize co-change of Java classes
-header-img: img/posts/CoChangeStrawberries.jpg
+date: 2019-08-07
+categories: [Moose, Java, DSM]
+author: Christopher Fuhrman
 subtitle: >-
-  In this post, I will show a DSM-based visualization for co-change with a Java project using Moose and Pharo.
-background: '/img/posts/CoChangeStrawberries.jpg'
+  I will show a DSM-based visualization for co-change with a Java project using Moose and Pharo.
+image: image.jpg
+bibliography: refs.bib
 ---
 ## Using a DSM to visualize co-change of Java classes
 
-In a previous post, I explained how to do a [`DSM from a Java project in Moose`]({% post_url 2019-08-06-DSM-in-Moose-from-Java %}). In this post, I will extend the idea to a DSM-based visualization for co-change, again with a Java project using Moose.
+In a previous post, I explained how to do a [`DSM from a Java project in Moose`](../dsm-moose-java/index.qmd). In this post, I will extend the idea to a DSM-based visualization for co-change, again with a Java project using Moose.
 
 ### Background
 
 Simply defined, co-change is the notion that two modules in a project change together.
 We can identify co-change in a project when multiple modules are committed to a repository together.
 
-A Design Structure Matrix (DSM) can be used to visualize co-change in a project, e.g., see [1]. That is, a cell *x*,*y* in the matrix contains the number of times the file *x* and *y* were changed in the same commit.
+A Design Structure Matrix (DSM) can be used to visualize co-change in a project, e.g., see @Geipel2012. That is, a cell *x*,*y* in the matrix contains the number of times the file *x* and *y* were changed in the same commit.
 
 ## Sample co-change data mined from git
 
@@ -80,14 +80,15 @@ dsm rotation: 270.
 
 Here's the visualization in action, when you *Do it all and go*:
 
-[![Roassal CoChangeDSM visualization]({{site.baseurl}}/img/posts/RTCochangeDSM.gif){:class="img-responsive"}]({{site.baseurl}}/img/posts/RTCochangeDSM.gif)
+![Roassal CoChangeDSM visualization](RTCochangeDSM.gif)
 
-The `GMCochangeMatrix` has the following properties with respect to the cells on its diagonal [1]:
+The `GMCochangeMatrix` has the following properties with respect to the cells on its diagonal [@Geipel2012]:
 
 - The cell *m*,*m* contains the total number of times class *m* was changed. 
 - The sum of the diagonal is the total number of changes.
 
 In Pharo, you can send the message `GMCochangeMatrix>>#cochangeMatrix` to obtain a `PMMatrix` (part of [PolyMath](https://github.com/PolyMathOrg/PolyMath)) and then get its `principalDiagonal`. Converting the diagonal to an Array allows you to get its sum. To demonstrate the above properties, insert the following before the `^dsm` line in the example above:
+
   ```smalltalk
   Transcript show: 'Diagonal: '
   	, cochangeMatrix cochangeMatrix principalDiagonal asString; cr.
