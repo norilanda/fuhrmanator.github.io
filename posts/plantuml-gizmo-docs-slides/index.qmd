@@ -1,16 +1,15 @@
 ---
-layout: post
-comments: true
-published: true
 title: PlantUML Gizmo bundled for Google Docs and Slides
-header-img: img/posts/PlantUMLGizmoSlidesScreenShot1280x800.png
+author: Christopher Fuhrman
+date: 2019-11-24
+image: image.jpg
+categories: [PlantUML]
 subtitle: >-
   You can now do PlantUML in Google Slides and Docs.
-background: '/img/posts/PlantUMLGizmoSlidesScreenShot1280x800.png'
 ---
 ## PlantUML Gizmo bundled for Google Docs and Slides
 
-I recently updated the PlantUML Gizmo add-on as a bundle for Google Docs and Google Slides.
+I recently updated the [PlantUML Gizmo add-on](https://workspace.google.com/marketplace/app/plantuml_gizmo/950520042571) as a bundle for Google Docs and Google Slides.
 
 You will find more sample diagrams in the editor, including the latest **non-UML** diagrams supported by PlantUML (see below).
 
