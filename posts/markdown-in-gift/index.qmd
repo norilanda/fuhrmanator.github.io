@@ -6,7 +6,7 @@ categories: [Moodle, GIFT, markdown]
 image: image.jpg
 ---
 
-Markdown <i class="fab fa-markdown"></i> is a format supported within GIFT (see: [Creating questions quickly in Moodle with GIFT]({% post_url 2020-12-18-Creating-questions-quickly-with-GIFT %})), which can be used for simple formatting text in a question, in answers and feedback:
+Markdown <i class="fab fa-markdown"></i> is a format supported within GIFT (see: [Creating questions quickly in Moodle with GIFT](../creating-questions-quickly-gift/index.qmd)), which can be used for simple formatting text in a question, in answers and feedback:
 
 ```latex
 ::Simple markdown::
