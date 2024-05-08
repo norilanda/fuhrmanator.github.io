@@ -1,10 +1,9 @@
 ---
-layout: post
-comments: true
-published: true
 title: Open Educational Resource (OER) in French
-header-img: img/posts/lightbulb-idea-innovation.jpg
-background: '/img/posts/lightbulb-idea-innovation.jpg'
+image: image.jpg
+date: 2023-05-22
+categories: [OER, Open Source, Quarto]
+author: Christopher Fuhrman
 ---
 
 For the ["Journée d'Innovation Pédagogique"](https://prof-ets.etsmtl.ca/journee-dinnovation-pedagogique/) of the ÉTS, I presented the work I did on creating an Open Education Resource (OER) for a course I teach.
