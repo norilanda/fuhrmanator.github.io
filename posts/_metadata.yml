@@ -6,32 +6,29 @@ freeze: true
 
 # include CSS style for title blocks
 title-block-banner: "#00000000"
-title-block-banner-color: "#ffffff"
+title-block-banner-color: "rgba(255, 255, 255, 0.9)"
 include-in-header:
   - text: |
       <style>
       #title-block-header.quarto-title-block.default .quarto-title-meta {
-        color: #ffffff;
+        color: rgba(255, 255, 255, 0.9);
       }
       .quarto-title-block .quarto-title-banner {
-        height: 0;
+        height: 0; /* hide */
       }
       #title-block-header {
-        background-image: url(./image.jpg);
+        background: 
+          /* top, transparent black, faked with gradient */
+          linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          /* bottom, image */ 
+          url(./image.jpg);
         background-size: cover;
         background-position-y: center;
-        height: 400px;
-        opacity: 1; /* Adjust as needed */
-        z-index: -1;
-      }
-      #title-block-header::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4); 
+        height: 450px;
+        opacity: 0.7; /* image opacity, lower means lighter */
         z-index: -1;
       }
       </style>
