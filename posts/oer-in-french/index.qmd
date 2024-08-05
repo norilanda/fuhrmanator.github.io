@@ -1,6 +1,8 @@
 ---
 title: Open Educational Resource (OER) in French
 image: image.jpg
+aliases: 
+  - ../../2023/05/22/Open-Educational-Resource-in-French.html
 date: 2023-05-22
 categories: [OER, Open Source, Quarto]
 author: Christopher Fuhrman

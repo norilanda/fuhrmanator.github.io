@@ -1,5 +1,7 @@
 ---
 title: Using a DSM to visualize co-change of Java classes
+aliases: 
+  - ../../2019/08/07/CoChange-DSM-Moose.html
 date: 2019-08-07
 categories: [Moose, Java, DSM]
 author: Christopher Fuhrman

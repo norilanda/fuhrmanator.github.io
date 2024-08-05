@@ -1,6 +1,8 @@
 ---
 title: TypeScript support for Moose (Pharo)
 date: 2023-09-15
+aliases: 
+  - ../../2023/09/15/TypeScript-support-in-Moose.html
 categories: [Moose, TypeScript]
 author: Christopher Fuhrman
 image: 'image.jpg'
