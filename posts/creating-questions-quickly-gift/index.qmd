@@ -1,6 +1,8 @@
 ---
 title: Creating questions quickly in Moodle with GIFT
 author: Christopher Fuhrman
+aliases: 
+  - ../../2020/12/18/Creating-questions-quickly-with-GIFT.html
 date: 2020-12-18
 categories: [Moodle, GIFT]
 image: image.jpg

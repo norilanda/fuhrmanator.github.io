@@ -1,6 +1,8 @@
 ---
 title: SZZ (unleashed) using GitHub
 date: 2023-09-15
+aliases: 
+  - ../../2023/09/15/SZZ-(unleashed)-using-GitHub.html
 categories: [Empirical analyses, GitHub, SZZ]
 author: Christopher Fuhrman
 image: image.jpg

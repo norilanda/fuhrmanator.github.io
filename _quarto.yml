@@ -2,16 +2,29 @@ project:
   type: website
 
 website:
-  title: "Blogging Allowed"
-  site-url: https://fuhrmanator.github.io/blog
+  title: "Christopher Fuhrman"
+  site-url: https://fuhrmanator.github.io/
+  description: "Christopher Fuhrman, software developer and professor of software engineering."
   favicon: favicon.png
   open-graph: 
-    site-name: "Blogging Allowed"
+    locale: en_US
+  twitter-card:
+    creator: "@thefuhrmanator"
+  comments:
+    hypothesis:
+      theme: clean
 
-  description: "Web log for Christopher Fuhrman, software developer and professor of software engineering. Generated with Quarto."
   navbar:
     right:
       - about.qmd
+      - text: "Home"
+        href: index.html
+      # - text: "Papers"
+      #   href: papers
+      # - text: "Presentations"
+      #   href: presentations
+      - text: "Blog"
+        href: blogging-allowed.html
       - icon: github
         href: https://github.com/fuhrmanator
       - icon: twitter=x
@@ -24,7 +37,7 @@ website:
         href: index.xml
 format:
   html:
-    theme: united
+    theme: journal
     css: styles.css
     highlight-style: github
     syntax-definitions: 

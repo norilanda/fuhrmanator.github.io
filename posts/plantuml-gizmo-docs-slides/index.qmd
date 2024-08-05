@@ -1,6 +1,8 @@
 ---
 title: PlantUML Gizmo bundled for Google Docs and Slides
 author: Christopher Fuhrman
+aliases: 
+  - ../../2019/11/24/PlantUML-Gizmo-Docs-Slides-bundle.html
 date: 2019-11-24
 image: image.jpg
 categories: [PlantUML]
