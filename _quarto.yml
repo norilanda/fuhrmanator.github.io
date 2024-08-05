@@ -52,3 +52,6 @@ diagram:
       mime-type:
         image/svg+xml: true
         application/pdf: false
+
+execute: 
+  freeze: auto

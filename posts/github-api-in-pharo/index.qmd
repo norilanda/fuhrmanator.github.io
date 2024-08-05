@@ -1,6 +1,4 @@
 ---
-aliases: 
-  - "/Using-GitHub-API-in-Pharo/"
 title: Using the GitHub API in Pharo 7
 aliases: 
   - ../../2019/03/22/Using-GitHub-API-in-Pharo.html

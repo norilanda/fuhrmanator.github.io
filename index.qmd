@@ -21,12 +21,10 @@ comments: false
 ---
 ::: {.column-page}
 
-## Bio
+## Who am I?
 
-I'm a software engineering professor at [École de technologie supérieure](https://www.etsmtl.ca/) ([lire ma page en français](https://profs.etsmtl.ca/cfuhrman/)), where I teach courses on software architecture, software quality, and software testing. 
+I'm a software engineering professor at [École de technologie supérieure](https://www.etsmtl.ca/) ([lire ma page en français](https://profs.etsmtl.ca/cfuhrman/)), where I teach courses on software engineering, specifically in software design. 
 
 My research interests include software migration, testing, quality, and architecture. 
-
-
 
 :::
