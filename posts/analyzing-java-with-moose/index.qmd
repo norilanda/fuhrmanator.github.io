@@ -1,6 +1,8 @@
 ---
 draft: false
 title: Analyzing Java with Moose 8
+aliases: 
+  - ../../2019/07/29/AnalyzingJavaWithMoose.html
 author: Christopher Fuhrman
 date: 2019-07-29
 categories: [Moose, Pharo, Java, PlantUML]

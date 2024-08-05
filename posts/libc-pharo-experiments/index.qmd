@@ -1,6 +1,6 @@
 ---
 aliases: 
-    - "/LibC-Pharo-experiments/"
+    - ../../2019/03/16/LibC-Pharo-experiments.html
 draft: false
 title: LibC experiments in Pharo 7
 author: Christopher Fuhrman

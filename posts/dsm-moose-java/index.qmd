@@ -1,5 +1,7 @@
 ---
 title: Dependency Structure Matrix for a Java project using Moose
+aliases: 
+  - ../../2019/08/06/DSM-in-Moose-from-Java.html
 date: 2019-08-06
 categories: [Moose, Java, DSM]
 author: Christopher Fuhrman
