@@ -5,7 +5,7 @@ description: How to find my office.
 image: img/bg-about.jpg
 ---
 
-![](/img/bg-about.jpg)
+![](img/bg-about.jpg)
 
 [English directions](#english-directions)
 

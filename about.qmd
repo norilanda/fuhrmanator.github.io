@@ -23,4 +23,4 @@ about:
 
 I'm a software developer and professor of software engineering at the École de technologie supérieure (ETS) in Montreal. Find out more [here](https://profs.etsmtl.ca/cfuhrman).
 
-[Here are directions](directions.html) to find my office at ETS.
+[Here are directions](directions.qmd) to find my office at ETS.
