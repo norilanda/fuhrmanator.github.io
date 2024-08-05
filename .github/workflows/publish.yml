@@ -14,8 +14,10 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Markdown link check
+      - name: Qurto Markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          file-extension: '.qmd'
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
