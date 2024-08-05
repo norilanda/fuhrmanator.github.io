@@ -15,7 +15,7 @@ It has been released under the Creative Commons license, and was created using Q
 
 Here are a couple of presentations about the process and product:
 
-- [Creating an OER with Open Source Tools](https://fuhrmanator.github.io/assets/open-source-tools-fabriqueREL2023.html) (presentation in French and English)
-- [L'autoéquipement dans la création d'une REL](https://fuhrmanator.github.io/assets/autoequipement-REL-ACFAS-2023.html) "Dogfooding while creating an OER" (presentation in French).
+- [Creating an OER with Open Source Tools](../../presentations/open-source-tools-fabriqueREL2023.html) (presentation in French and English)
+- [L'autoéquipement dans la création d'une REL](../../presentations/autoequipement-REL-ACFAS-2023.html) "Dogfooding while creating an OER" (presentation in French).
 
 Photo credit: "[Lightbulb, Idea, Innovation](https://www.publicdomainpictures.net/en/view-image.php?image=255601&picture=lightbulb-idea-innovation)" ([CC0 Public Domain](http://creativecommons.org/publicdomain/zero/1.0/)) by [mohamed mahmoud hassan](https://www.publicdomainpictures.net/en/contact.php?email=138450&img=255601)
