@@ -87,7 +87,7 @@ Both our metamodel and the `ts2famix` npm package share a consistent approach to
 In our metamodel, parametric elements and their concretizations are modeled clearly to reflect the relationships between abstract types and their concrete instances.
 These representations are aligned with how `ts2famix` handles generics in TypeScript projects, ensuring that improvements in the recognition of parametric elements are mirrored in both the model and the code analysis process.
 
-![TypeScript Metamodel](metaModel.png)
+![TypeScript Metamodel](metaModel.png){.lightbox}
 
 ## Conclusion
 
