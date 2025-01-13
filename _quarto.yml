@@ -1,6 +1,8 @@
 project:
   type: website
-
+  resources:
+    - presentations
+    
 website:
   title: "Christopher Fuhrman"
   site-url: https://fuhrmanator.github.io/
