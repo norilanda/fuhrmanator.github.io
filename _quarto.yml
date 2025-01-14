@@ -1,8 +1,12 @@
 project:
   type: website
   resources:
-    - assets
     - presentations
+
+# handle redirects from old blog
+files:
+  - assets/autoequipement-REL-ACFAS-2023.html
+  - assets/open-source-tools-fabriqueREL2023.html
 
 website:
   title: "Christopher Fuhrman"
