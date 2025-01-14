@@ -14,11 +14,12 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Install PlantUML
+      - name: Download Latest PlantUML and make a plantuml command
         run: |
-          sudo apt-get update
-          sudo apt-get install -y plantuml graphviz
-
+          curl -L -o /usr/local/bin/plantuml.jar https://downloads.sourceforge.net/project/plantuml/plantuml.jar
+          echo '#!/bin/bash' > /usr/local/bin/plantuml
+          echo 'java -jar /usr/local/bin/plantuml.jar "$@"' >> /usr/local/bin/plantuml
+          chmod +x /usr/local/bin/plantuml
 
       - name: Quarto Markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
