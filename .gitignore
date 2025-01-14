@@ -1,3 +1,5 @@
 /.quarto/
 _site/
 posts/**/index_files/mediabag/
+
+/.luarc.json

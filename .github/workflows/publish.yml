@@ -14,6 +14,12 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Install PlantUML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y default-jre graphviz
+          curl -o plantuml.jar https://downloads.sourceforge.net/project/plantuml/plantuml.jar
+
       - name: Quarto Markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
