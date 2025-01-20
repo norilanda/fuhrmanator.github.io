@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - presentations
+    - assets
 
 # handle redirects from old blog
 files:
