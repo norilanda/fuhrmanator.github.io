@@ -35,10 +35,10 @@ website:
         href: blogging-allowed.html
       - icon: github
         href: https://github.com/fuhrmanator
-      - icon: twitter=x
-        href: https://twitter.com/thefuhrmanator
       - icon: linkedin
         href: https://www.linkedin.com/in/fuhrmanator/
+      - icon: twitter=x
+        href: https://twitter.com/thefuhrmanator
       - icon: envelope
         href: mailto:christopher.fuhrman@etsmtl.ca
       - icon: rss
@@ -53,7 +53,8 @@ format:
 
 filters:
   - diagram
-
+  - pandoc-variable
+  
 diagram:
   engine:
     plantuml:
