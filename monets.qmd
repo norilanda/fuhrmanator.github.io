@@ -32,4 +32,5 @@ description: Il était une fois un portail simple qui était le centre de l'univ
 ## Varia
 
 - [GUS](https://gus.etsmtl.ca/)
+- [Cellulaire](https://cellulaire.etsmtl.ca/)
 
