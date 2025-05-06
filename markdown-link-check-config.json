@@ -28,5 +28,5 @@
             "comment": "Ignore Elon Musk's politics on accessing Twitter"
         }
     ],
-    "aliveStatusCodes": [200, 206, 403, 999]
+    "aliveStatusCodes": [200, 206, 403, 429, 999]
 }
