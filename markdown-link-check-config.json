@@ -22,6 +22,10 @@
         {
             "pattern": "https://telephonie.etsmtl.ca/|https://reservlocaux-gestion.etsmtl.ca/",
             "comment": "Ignore sites that require the VPN to access"
+        },
+        {
+            "pattern": "^https?://(x.com|twitter.com)/.*$",
+            "comment": "Ignore Elon Musk's politics on accessing Twitter"
         }
     ],
     "aliveStatusCodes": [200, 206, 403, 999]
