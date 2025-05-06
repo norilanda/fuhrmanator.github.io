@@ -18,7 +18,7 @@ description: Il était une fois un portail simple qui était le centre de l'univ
 - [CASA (examens ESH)](https://casa.etsmtl.ca/)
 - [EvalCours](https://evalcours.etsmtl.ca/)
 - [Réservation de salles (Prelude)](https://prelude.etsmtl.ca/)
-- [Réservation de salles (gestion)](https://reservlocaux-gestion.etsmtl.ca/)
+- [Réservation de salles (gestion) VPN!](https://reservlocaux-gestion.etsmtl.ca/)
 - [PAE-BAT (profs réguliers)](https://pae.etsmtl.ca/)
 - [PAE-BAT (profs enseignants)](https://eenseignant.etsmtl.ca/PB)
 

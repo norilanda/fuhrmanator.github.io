@@ -18,6 +18,10 @@
         {
             "pattern": "^https?://www.plantuml.com/.*$",
             "comment": "Ignore PlantUML diagrams (timeout can be long)"
+        },
+        {
+            "pattern": "https://telephonie.etsmtl.ca/|https://reservlocaux-gestion.etsmtl.ca/",
+            "comment": "Ignore sites that require the VPN to access"
         }
     ],
     "aliveStatusCodes": [200, 206, 403, 999]

@@ -6,7 +6,7 @@ about:
   links:
     - icon: twitter-x
       text: (Twitter)
-      href: https://twitter.com/thefuhrmanator
+      href: https://x.com/thefuhrmanator
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/fuhrmanator/
