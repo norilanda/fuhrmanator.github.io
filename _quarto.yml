@@ -37,12 +37,14 @@ website:
         href: https://github.com/fuhrmanator
       - icon: linkedin
         href: https://www.linkedin.com/in/fuhrmanator/
-      - icon: twitter=x
+      - icon: twitter-x
         href: https://twitter.com/thefuhrmanator
       - icon: envelope
         href: mailto:christopher.fuhrman@etsmtl.ca
       - icon: rss
         href: index.xml
+      - text: "⚰"
+        href: monets.html
 format:
   html:
     theme: journal

@@ -1,0 +1,35 @@
+---
+title: RIP MonÉTS
+description: Il était une fois un portail simple qui était le centre de l'université pour les enseignants.
+---
+
+## SAFIRH
+
+- [SAFIRH Portail Employé](https://safirh.etsmtl.ca/cgi-bin/etsEpl.pl)
+- [SAFIRH Portail Gestionnaire](https://safirh.etsmtl.ca/cgi-bin/etsGes.pl)
+- [SAFIRH Portail d'info de gestion](https://safirh.etsmtl.ca/dbweb-ets/)
+- [SAFIRH 1.0](https://safirh.etsmtl.ca/cgi-bin/etsForms.pl)
+- [SAFIRH 2.0](https://safirh.etsmtl.ca/safirh2/production/safirh/accueil)
+
+## Enseignement
+
+- [PlanETS](https://planets.etsmtl.ca/)
+- [SIGNETS](https://signets.etsmtl.ca/)
+- [CASA (examens ESH)](https://casa.etsmtl.ca/)
+- [EvalCours](https://evalcours.etsmtl.ca/)
+- [Réservation de salles (Prelude)](https://prelude.etsmtl.ca/)
+- [Réservation de salles (gestion)](https://reservlocaux-gestion.etsmtl.ca/)
+- [PAE-BAT (profs réguliers)](https://pae.etsmtl.ca/)
+- [PAE-BAT (profs enseignants)](https://eenseignant.etsmtl.ca/PB)
+
+## Corps professoral
+
+- [Uniweb](http://uniweb.etsmtl.ca/)
+- [Téléphonie](https://telephonie.etsmtl.ca/)
+- [Messagerie (Outlook)](https://outlook.etsmtl.ca/)
+- [GIPPE](https://gippe.etsmtl.ca/)
+
+## Varia
+
+- [GUS](https://gus.etsmtl.ca/)
+
