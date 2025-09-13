@@ -28,6 +28,22 @@ Communication between the client and server is handled via the [Language Server 
 
 ## Incremental Update Feature
 
+### Incremental Update Workflow
+
+The incremental update process follows this workflow:
+
+1. **Change Detection**: For each modified file, categorize the change type (creation, modification, or deletion)
+2. **Project Synchronization**: Update the ts-morph project representation with the current file content
+3. **Famix Element Processing**:
+   - **Identification**: Locate all Famix elements that reference the modified file through their `sourcedAnchor` field
+   - **Dependency Tracing**: Follow the `ImportClause` chain to find all dependent elements
+   - **Stub Management**: Identify any related stub entities that may be affected
+   - **Element Removal**: Delete all identified elements from the model
+4. **Targeted Regeneration**: For non-deletion changes, recreate the necessary Famix elements for the modified file
+5. **Model Serialization**: Generate an updated JSON representation and persist it to the configured storage location
+
+Now let's examine the design decisions behind this workflow in more detail, starting with how we determined the appropriate level of change processing.
+
 ### Operating Granularity: Choosing the Right Level of Change Processing
 One of the first development decisions was determining at what level we should process changes in the TypeScript code.
 
