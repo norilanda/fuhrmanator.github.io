@@ -42,6 +42,9 @@ The incremental update process follows this workflow:
 4. **Targeted Regeneration**: For non-deletion changes, recreate the necessary Famix elements for the modified file
 5. **Model Serialization**: Generate an updated JSON representation and persist it to the configured storage location
 
+This workflow is also demonstrated on the next diagram:
+![Incremental Update Diagram](incremental-update-activity-diagram.png){.lightbox}
+
 Now let's examine the design decisions behind this workflow in more detail, starting with how we determined the appropriate level of change processing.
 
 ### Operating Granularity: Choosing the Right Level of Change Processing
