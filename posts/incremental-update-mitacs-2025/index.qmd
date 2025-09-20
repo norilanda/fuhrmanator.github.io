@@ -1,6 +1,6 @@
 ---
-title: Incremental Update
-date: 2025-09-03
+title: Incremental Update of TypeScript Famix Models
+date: 2025-09-20
 categories: [Moose, TypeScript]
 author: Lidiia Makarchuk
 image: 'image.jpg'
