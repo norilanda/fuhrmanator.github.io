@@ -19,7 +19,7 @@ This extension aims to:
 
 ## Project Overview
 
-The project consists of two main components:
+The project follows the standard client-server architecture outlined in the [Language Server Extension Guide](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide) and consists of two main components:
 
 - **Server:** Uses the `ts2famix` library to generate or update the famix model.
 - **Client:** Monitors changes in the TypeScript project and triggers incremental updates. It also provides commands to regenerate the model from scratch and lets the user configure where the JSON file is saved.
